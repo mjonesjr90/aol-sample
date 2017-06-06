@@ -12,7 +12,7 @@ import com.millennialmedia.MMException;
 public class BannerActivity extends AppCompatActivity {
 
     private static final String TAG = "BannerActivity";
-    private static final String PlACEMENT_ID = "mj_test";
+    private static final String PlACEMENT_ID = "YOUR_PLACEMENT_HERE";
     private InlineAd inlineAd;
 
     @Override
