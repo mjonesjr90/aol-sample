@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(pos == 3){
                     Intent intent = new Intent(MainActivity.this, NativeActivity.class);
-                    startActivity(intent);
+                    Toast.makeText(MainActivity.this, "Native", Toast.LENGTH_SHORT).show();
                 }
             }
         });
