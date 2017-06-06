@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.malcomjones.aolsample">
 
+    <!-- Permissions for AOL SDK -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -18,13 +19,8 @@
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
-    <provider
-        android:name="com.millennialmedia.internal.utils.MediaContentProvider"
-        android:authorities="${applicationId}.MediaContentProvider"
-        android:exported="false"
-        android:grantUriPermissions="true"/>
-
     <application
+        android:name=".AOLSample"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -44,8 +40,12 @@
         </activity>
         <activity android:name=".NativeActivity">
         </activity>
-        <activity android:name=".SubclassActivity">
-        </activity>
+
+        <provider
+            android:name="com.millennialmedia.internal.utils.MediaContentProvider"
+            android:authorities="${applicationId}.MediaContentProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"/>
     </application>
 
 </manifest>
