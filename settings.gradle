@@ -1,1 +1,1 @@
-include ':app', ':android-ad-sdk'
+include ':app', ':android-ad-sdk', ':android-mm-mopub-adapter'

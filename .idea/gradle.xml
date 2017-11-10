@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/android-ad-sdk" />
+            <option value="$PROJECT_DIR$/android-mm-mopub-adapter" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

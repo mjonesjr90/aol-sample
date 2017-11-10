@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AOLSample.iml" filepath="$PROJECT_DIR$/AOLSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/android-ad-sdk/android-ad-sdk.iml" filepath="$PROJECT_DIR$/android-ad-sdk/android-ad-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-mm-mopub-adapter/android-mm-mopub-adapter.iml" filepath="$PROJECT_DIR$/android-mm-mopub-adapter/android-mm-mopub-adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
