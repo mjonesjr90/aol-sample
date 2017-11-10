@@ -48,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(pos == 1){
-                    Toast.makeText(MainActivity.this, "MREC", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, MRECActivity.class);
+                    startActivity(intent);
                 }
                 if(pos == 2){
                     Intent intent = new Intent(MainActivity.this, InterstitialActivity.class);

@@ -12,7 +12,7 @@ import com.millennialmedia.MMException;
 
 public class InterstitialActivity extends AppCompatActivity {
 
-    public static final String PLACEMENT_ID = "YOUR_PLACEMENT_HERE";
+    public static final String PLACEMENT_ID = "and_interstitial_test_placement";
     public static final String TAG = InterstitialActivity.class.getSimpleName();
 
     //Interstitial Ad declared

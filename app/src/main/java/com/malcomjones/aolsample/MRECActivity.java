@@ -8,20 +8,21 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.millennialmedia.InlineAd;
+import com.millennialmedia.InlineAd.AdSize;
 import com.millennialmedia.MMException;
 
-public class BannerActivity extends AppCompatActivity {
+public class MRECActivity extends AppCompatActivity {
 
-    private static final String TAG = "BannerActivity";
-    private static final String PlACEMENT_ID = "banner_homescreen";
+    private static final String TAG = "MRECActivity";
+    private static final String PlACEMENT_ID = "mrec";
     private InlineAd inlineAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_banner);
+        setContentView(R.layout.activity_mrec);
 
-        final View adContainer = findViewById(R.id.banner_container);
+        final View adContainer = findViewById(R.id.mrec_container);
 
         try {
             // NOTE: The ad container argument passed to the createInstance call should be the
@@ -51,7 +52,7 @@ public class BannerActivity extends AppCompatActivity {
                         @Override
                         public void run() {
 
-                        Toast.makeText(BannerActivity.this, "Request Failed Called: " + errorStatus.toString(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(MRECActivity.this, "Request Failed Called: " + errorStatus.toString(), Toast.LENGTH_LONG).show();
                         }
                     });
                     Log.i(TAG, errorStatus.toString());
@@ -118,7 +119,7 @@ public class BannerActivity extends AppCompatActivity {
             // The InlineAdMetadata instance is used to pass additional metadata to the server to
             // improve ad selection
             final InlineAd.InlineAdMetadata inlineAdMetadata = new InlineAd.InlineAdMetadata().
-                    setAdSize(InlineAd.AdSize.BANNER);
+                    setAdSize(AdSize.MEDIUM_RECTANGLE);
 
             inlineAd.request(inlineAdMetadata);
         }

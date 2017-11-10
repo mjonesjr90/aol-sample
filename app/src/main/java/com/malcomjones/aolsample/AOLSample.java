@@ -13,7 +13,8 @@ import com.millennialmedia.MMSDK;
 
 public class AOLSample extends Application {
     private static final String TAG = "SubclassActivity";
-    private static final String SITE_ID = "YOUR_SITEID_HERE";
+//    private static final String SITE_ID = "8a8094170154542ee5f84c2add5d0234";
+    private static final String SITE_ID = "studytime";
 
     @Override
     public void onCreate() {
